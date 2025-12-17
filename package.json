@@ -1,8 +1,9 @@
 {
   "name": "wxt-web-extension-react-ts-boilerplate",
-  "description": "manifest.json description",
+  "description": "Modern web extension boilerplate with WXT, React 19, TypeScript, Tailwind CSS v4, and ESLint",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Piyush Gambhir",
   "type": "module",
   "scripts": {
     "dev": "wxt",
