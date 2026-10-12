@@ -1,0 +1,8 @@
+# Which dependency build scripts are permitted to run (pnpm 11+ blocks them by default).
+allowBuilds:
+  esbuild: true
+  spawn-sync: true
+
+# Patched transitive version for an open advisory, scoped to one major.
+overrides:
+  'shell-quote@<1.11.0': ^1.11.0
