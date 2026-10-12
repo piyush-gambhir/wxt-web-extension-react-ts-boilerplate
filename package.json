@@ -5,6 +5,10 @@
   "version": "0.0.1",
   "author": "Piyush Gambhir",
   "type": "module",
+  "packageManager": "pnpm@12.11.2",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
@@ -29,11 +33,12 @@
     "@eslint/js": "^10.0.1",
     "@tailwindcss/postcss": "^4.1.18",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
-    "@types/react": "^19.2.13",
-    "@types/react-dom": "^19.2.3",
-    "@wxt-dev/module-react": "^1.1.5",
-    "dotenv": "^17.2.4",
-    "eslint": "^10.0.0",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@wxt-dev/module-react": "^1.2.2",
+    "dotenv": "^18.0.7",
+    "eslint": "^9.39.5",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.0",

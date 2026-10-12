@@ -1,0 +1,4 @@
+# Which dependency build scripts are permitted to run (pnpm 11+ blocks them by default).
+allowBuilds:
+  esbuild: true
+  spawn-sync: true
