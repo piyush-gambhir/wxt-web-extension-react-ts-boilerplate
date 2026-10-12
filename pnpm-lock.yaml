@@ -266,8 +266,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(prettier@3.9.10)
       prettier-plugin-tailwindcss:
-        specifier: ^0.7.4
-        version: 0.7.4(@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.9.10)(supports-color@7.2.0))(prettier-plugin-organize-attributes@1.0.0(prettier@3.9.10))(prettier@3.9.10)
+        specifier: ^0.8.1
+        version: 0.8.1(@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.9.10)(supports-color@7.2.0))(prettier-plugin-organize-attributes@1.0.0(prettier@3.9.10))(prettier@3.9.10)
       rollup-plugin-visualizer:
         specifier: ^7.1.1
         version: 7.1.1(rollup@4.57.1)
@@ -4149,10 +4149,10 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  prettier-plugin-tailwindcss@0.7.4:
+  prettier-plugin-tailwindcss@0.8.1:
     resolution:
       {
-        integrity: sha512-UKii4RjY05SNt/WQi6/NcOn/LsT0/ILLXsxygjbRg5/YZelsSu5jTqorYHPDGq4nZy5q5hpCu+XdGZ1xaJEQgw==,
+        integrity: sha512-iaFMYqDsE4ffdDkn5qup0j5f2aCEBFZrdrZnvu9QKTlWx/iGPeQ4HHu7b7fCPMxeo9nwQBiOAh2nSypdFYWJkw==,
       }
     engines: { node: '>=20.19' }
     peerDependencies:
@@ -7633,7 +7633,7 @@ snapshots:
     dependencies:
       prettier: 3.9.10
 
-  prettier-plugin-tailwindcss@0.7.4(@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.9.10)(supports-color@7.2.0))(prettier-plugin-organize-attributes@1.0.0(prettier@3.9.10))(prettier@3.9.10):
+  prettier-plugin-tailwindcss@0.8.1(@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.9.10)(supports-color@7.2.0))(prettier-plugin-organize-attributes@1.0.0(prettier@3.9.10))(prettier@3.9.10):
     dependencies:
       prettier: 3.9.10
     optionalDependencies:
