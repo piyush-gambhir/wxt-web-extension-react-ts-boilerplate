@@ -50,7 +50,7 @@
     "prettier-plugin-tailwindcss": "^0.7.4",
     "rollup-plugin-visualizer": "^7.1.1",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.71.1",
     "wxt": "^0.20.27"
   },
