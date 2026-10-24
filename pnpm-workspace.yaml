@@ -5,4 +5,7 @@ allowBuilds:
 
 # Patched transitive version for an open advisory, scoped to one major.
 overrides:
-  'shell-quote@<1.11.0': ^1.11.0
+  shell-quote@<1.11.0: ^1.11.0
+  undici@>=7.0.0 <7.30.1: 7.30.1
+minimumReleaseAgeExclude:
+  - undici@7.30.1
