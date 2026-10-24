@@ -22,7 +22,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "analyze": "ANALYZE=true pnpm build"
+    "analyze": "ANALYZE=true pnpm build",
+    "test:security": "node --test scripts/security/verify-node-forge-security.cjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
