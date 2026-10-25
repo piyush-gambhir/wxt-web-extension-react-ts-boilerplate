@@ -27,6 +27,6 @@ Firefox was built and packaged, but its live browser runtime was not exercised. 
 
 The GitHub release workflow is tag-only. The previous manual trigger could create a release and tag named `main`; it is removed. Release packaging runs lint, both compilers, and the existing security regression suite, and GitHub CLI verifies that the tag already exists.
 
-No tag, GitHub release, push, browser-store submission, or deployment was performed. For the current package version, use a reviewed `v0.0.1` tag when publishing is authorized. The generated ZIPs are unsigned build artifacts, not evidence of browser-store approval.
+The package version is 0.0.1. Publication uses a reviewed `v0.0.1` tag and the tag-only workflow. Verify the release workflow and downloaded ZIPs before declaring publication complete. The generated ZIPs are unsigned build artifacts, not evidence of browser-store approval.
 
 The native compiler provides a newer typecheck path; no speed or size improvement is claimed without a controlled benchmark.

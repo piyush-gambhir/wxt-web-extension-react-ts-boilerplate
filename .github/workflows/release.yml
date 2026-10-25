@@ -35,6 +35,6 @@ jobs:
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.ref_name }}
         run: |
-          tag="${{ github.ref_name }}"
-          gh release create "$tag" --verify-tag .output/*.zip --title "$tag" --generate-notes
+          gh release create "$RELEASE_TAG" --verify-tag .output/*.zip --title "$RELEASE_TAG" --generate-notes
