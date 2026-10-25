@@ -5,9 +5,9 @@
   "version": "0.0.1",
   "author": "Piyush Gambhir",
   "type": "module",
-  "packageManager": "pnpm@12.11.2",
+  "packageManager": "pnpm@12.15.0",
   "engines": {
-    "node": ">=24.22.1 <25"
+    "node": ">=26.12.1 <27"
   },
   "scripts": {
     "dev": "wxt",
@@ -16,14 +16,15 @@
     "build:firefox": "wxt build -b firefox",
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox",
-    "compile": "tsc --noEmit",
+    "compile": "node node_modules/@typescript/native/bin/tsc --noEmit",
     "postinstall": "wxt prepare",
     "prepare": "husky",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "analyze": "ANALYZE=true pnpm build",
-    "test:security": "node --test scripts/security/verify-node-forge-security.cjs"
+    "test:security": "node --test scripts/security/verify-node-forge-security.cjs",
+    "compile:compat": "node node_modules/typescript/bin/tsc --noEmit"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -34,7 +35,7 @@
     "@eslint/js": "^9.39.5",
     "@tailwindcss/postcss": "^4.3.3",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
-    "@types/node": "^24.19.2",
+    "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@wxt-dev/module-react": "^1.2.2",
@@ -51,11 +52,12 @@
     "prettier-plugin-tailwindcss": "^0.8.1",
     "rollup-plugin-visualizer": "^7.1.1",
     "tailwindcss": "^4.3.3",
-    "typescript": "^6.0.3",
+    "typescript": "~6.0.3",
     "typescript-eslint": "^8.72.0",
     "vite": "^8.3.5",
     "web-ext": "^10.8.0",
-    "wxt": "^0.21.4"
+    "wxt": "^0.21.4",
+    "@typescript/native": "npm:typescript@^7.0.2"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
