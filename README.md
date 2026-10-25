@@ -39,8 +39,8 @@ A modern, production-ready web extension boilerplate built with the latest techn
 
 ### Prerequisites
 
-- Node.js 20+
-- pnpm (recommended) or npm
+- Node.js 26.12.1 (see `.nvmrc`)
+- pnpm 12.15.0
 
 ### Installation
 
@@ -77,7 +77,8 @@ pnpm zip:firefox      # Create distributable zip (Firefox)
 pnpm lint             # Run ESLint
 pnpm lint:fix         # Fix ESLint errors
 pnpm format           # Format code with Prettier
-pnpm compile          # TypeScript type checking
+pnpm compile          # TypeScript 7 type checking
+pnpm compile:compat   # TypeScript 6 compiler API compatibility
 
 # Analysis
 pnpm analyze          # Generate bundle size visualization

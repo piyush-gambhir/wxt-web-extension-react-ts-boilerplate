@@ -39,5 +39,11 @@ jobs:
       - name: Typecheck
         run: pnpm run compile
 
+      - name: Check compiler API compatibility
+        run: pnpm run compile:compat
+
+      - name: Build Firefox extension
+        run: pnpm run build:firefox
+
       - name: Build extension
         run: pnpm run build
