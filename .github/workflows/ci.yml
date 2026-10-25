@@ -20,11 +20,11 @@ jobs:
 
       - uses: pnpm/action-setup@v6
         with:
-          version: 12.11.2
+          version: 12.15.0
 
       - uses: actions/setup-node@v7
         with:
-          node-version: '24.22.1'
+          node-version: '26.12.1'
           cache: pnpm
 
       - name: Install dependencies
@@ -38,6 +38,12 @@ jobs:
 
       - name: Typecheck
         run: pnpm run compile
+
+      - name: Check compiler API compatibility
+        run: pnpm run compile:compat
+
+      - name: Build Firefox extension
+        run: pnpm run build:firefox
 
       - name: Build extension
         run: pnpm run build
